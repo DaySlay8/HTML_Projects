@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Food Preference Form</title>
+</head>
+<body>
+    <!--creating a header section with my name and a brief description of myself-->
+    <header>
+        <h1>Day Grear</h1>
+        <p>I enjoy being adventurous when it comes to trying different cultural dishes, and I don’t have any dietary restrictions.</p>
+    </header>
+    <!--creating a food preference form that allow users to select their food preferences and provide additional information related to food choices-->
+    <form>
+        <!--Checkbox Preferences: including checkboxes for different food preferences, such as Vegetarian, Vegan, Gluten free, Dairy-free, etc-->
+        <fieldset>
+            <legend>Select your food preference</legend>
+            <label>
+                <input type="checkbox" name="preference" value="vegetarian">vegetarian
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="preference" value="Vegan">Vegan
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="preference" value="gluten-free">Gluten-Free
+            </label>
+            <br>
+            <label> 
+                <input type="checkbox" name="preference" value="dairy-free">Dairy-Free
+            </label>
+        </fieldset>
+        <br>
+        <!--Radio Preferences: providing options for users to select their favorite type of cuisine using radio buttons-->
+        <fieldset>
+            <legend>Select your favorite type of cuisine</legend>
+            <label>
+                <input type="radio" name="preference" value="asian">Asian
+            </label>
+            <label>
+                <input type="radio" name="preference" value="african">African
+            </label>
+            <label>
+                <input type="radio" name="preference" value="mediterranean">Mediterranean
+            </label>
+            <label>
+                <input type="radio" name="preference" value="american">American
+            </label>
+        </fieldset>
+        <br>
+        <!--Text Inputs: adding  text input fields for users to enter their favorite food items or specific dietary restrictions-->
+        <label for="favorite_food">Favorite Food</label>
+        <input id="favorite_food" type="text" name="favorite food" placeholder="enter your favorite food">
+        <br>
+        <!--Textarea Notes: including  a textarea where users can provide additional comments or details about their food preferences-->
+        <label for="additional_details">Additional Details</label>
+        <textarea name="additional_details" id="additional_details" placeholder="add details of specific dietary restrictions or comments" rows="4" cols="50"></textarea>
+        <br>
+        <!--Number Input and Max Length: implementing a number input field for users to specify the number of meals they typically eat in a day-->
+        <label for="meals_per_day">Number of Meals per Day</label>
+        <input id="meals_per_day" type="number" name="meals per day">
+        <br>
+        <!--Setting a maximum length for a text input field where users can describe their favorite dish in 10 characters or less-->
+        <label for="favorite_dish_description">Describe Favorite Dish (Max 10 characters):</label>
+        <input id="favorite_dish_description" type="text" name="favorite dish description">
+        <br>
+        <!--Disabled and Read-only Inputs: adding a disabled text input field to indicate an example of a food item that is not available and including a read-only text input field where users can view a pre-filled food-related message-->
+        <label for="read_only">Read Only Information</label>
+        <input id="read_only" type="text" name="read Only" value="Any food allergies?" readonly>
+        <br>
+        <!--Output Calculation: creating a form element that calculates the total calories consumed based on user input. Using a range input for the calorie count and a number input for the serving size-->
+        <label> Total Calories Consumed:</label>
+        <!--Using a range input for the calorie count and a number input for the serving size-->
+        <input type="range">
+        <input type="number">
+        <label>Calories</label>
+        <br>
+        <!--Dropdown Menu: for beverages, both alcoholic and non-alcoholic-->
+        <p>Non-Alcoholic Beverages</p>
+        <!--Providing a dropdown menu for users to select their preferred type of non-alcoholic beverage, such as Water, Soda, Juice, Tea, Coffee, etc-->
+        <label>
+            <select name="beverages">
+                <option value="pepsi">Pepsi</option>
+                <option value="cola">Cola</option>
+                <option value="lemonade">Lemonade</option>
+                <option value="water">Water</option>
+                <option value="juice">Juice</option>
+                <option value="coffee">Coffee</option>
+                <option value="assorted tea">Assorted Tea</option>
+            </select>
+        </label>
+        <br>
+        <!--Providing a dropdown menu for users to select their preferred type of alcoholic beverage, such as wines, cocktails, beer, hard liquor-->
+        <p>Alcoholic-Beverages</p>
+        <label>
+            <select name="beverage">
+                <option value="red wine">Red Wine</option>
+                <option value="White wine">White Wine</option>
+                <option value="cocktails">Cocktails</option>
+                <option value="beer">Beer</option>
+                <option value="hard liquor">Hard Liquor</option>
+            </select>
+        </label>
+        <br>
+        <!--creating a submit button so the user can submit the form-->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
